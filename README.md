@@ -7,9 +7,9 @@ This project focuses on processing images to identify and segment humans within 
 The dataset consists of original images paired with ground truth label images, where the labels represent the masked areas corresponding to humans in the original images.
 
 ## Screenshots
-![U-Net Architecture](Unet.png)
-![Image Masking with OpenCV](color.png)
-![Sample Output](output.png)
+![U-Net Architecture](img/Unet.png)
+![Image Masking with OpenCV](img/color.png)
+![Sample Output](img/output.png)
 
 ## Technologies
 - PyTorch
@@ -21,6 +21,15 @@ The dataset consists of original images paired with ground truth label images, w
 - tqdm
 - Helper
 
+## Accuracy
+The model achieved the following accuracy after 25 epochs:
+- Training Loss: 0.10180051624774933
+- Validation Loss: 0.19108986854553223
+
+## Status
+The project has been successfully completed.
+
+
 ## Setup
 To set up this project, execute the following code in your notebook to install required packages and download the dataset from GitHub using git clone:
 ```python
@@ -29,10 +38,3 @@ To set up this project, execute the following code in your notebook to install r
 !pip install --upgrade opencv-contrib-python
 !git clone https://github.com/parth1620/Human-Segmentation-Dataset-master.git
 
-## Accuracy
-After 25 epochs:
-- Training Loss: 0.10180051624774933
-- Validation Loss: 0.19108986854553223
-
-## Status
-The project has been successfully completed.
